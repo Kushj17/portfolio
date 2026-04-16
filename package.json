@@ -2,7 +2,7 @@
   "name": "lab-4",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://kushj17.github.io/portfolio-Website",
+  "homepage": "https://kushj17.github.io/portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
