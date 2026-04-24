@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaGraduationCap, FaUser, FaTerminal, FaBrain, FaCode, FaMicrochip, FaDatabase, FaTools } from 'react-icons/fa';
 import './Home.css';
+import heroImg from '../assets/hero.jpg';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -60,6 +61,16 @@ const Home = () => {
     >
       {/* Hero Section */}
       <section className="hero-section">
+        <motion.div 
+          className="hero-image-container"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <div className="glow-circle"></div>
+          <img src={heroImg} alt="Kush Jalan" className="profile-img" />
+        </motion.div>
+
         <motion.div className="hero-content" variants={itemVariants}>
           <motion.h2 
             className="greeting"
